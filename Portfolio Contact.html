@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Contact</title>
+     <link rel="stylesheet" href="./Portfolio Contact_files/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <style>
+        body{
+         background-color: orange;
+        }
+        h1,h2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight:lighter;
+        }
+        .social{
+        display: flex;
+        justify-content: center;
+         gap: 13px;
+
+        }
+      
+        .contact{
+            padding: 20px;
+            line-height: 30px;
+            background-color: rgba(255, 255, 255, 0.422);
+            width: 250px;
+            height: 200px;
+            border-radius: 20px;
+            margin-left: 230px;
+        }
+        a{
+    color:black;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 120px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+        }
+    a:hover{
+   border-radius: 10px;
+    background-color: orange;
+    color:whitesmoke;
+}
+.mynav{
+display: flex;
+justify-content: end;
+gap: 30px;
+
+
+
+}
+
+.contact-contaner{
+    background-color: rgba(255, 255, 255, 0.537);
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 240px;
+}
+.icon1:hover{
+scale: 1.1;
+border: 7px solid orange;
+border-radius: 50px;
+}
+.icon2:hover{
+scale: 1.1;
+border: 7px solid orange;
+border-radius: 20px;
+}
+
+
+
+i{
+    font-size: 50px;
+}
+
+     </style>
+    </head>
+<body>
+   <div class="contact-contaner">
+
+      <h1>CONTACT INFORMATION</h1>
+     <nav class="mynav">
+      <a href="http://127.0.0.1:5500/portfolio.html" target="_blank">Home</a>
+      <a href="http://127.0.0.1:5500/about.html" target="_blank">About</a>
+      <!-- <a href="http://127.0.0.1:5500/amazon%20copy.html">Projects</a> -->
+      <a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a>
+    </nav>
+    <div class="contact">
+    <p>
+    Name: Atyan Malik. <br>
+    Email Adress: atyanmalik8@gmail.com <br>
+    Phone Number: 03286867984 <br>
+    Adress: Jinnah colony shujabad/Multan <br>
+    </p>
+    </div>
+
+    <h2>SOCIAL MEDIA </h2>
+     <div class="social">
+     <div class="icon1"> <i class="fa-brands fa-facebook"> </i> </div> <br>
+    <div class="icon2"> <i class="fa-brands fa-instagram"></i> </div> <br>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+
+
+
+
+ <script>
+let icon1    = document.querySelector(".icon1")
+let icon2    = document.querySelector(".icon2")
+
+
+
+icon2.addEventListener("click",()=>{
+window.location.href="https://www.instagram.com/atyan._.developer/"
+})
+icon1.addEventListener("click",()=>{
+window.location.href="https://www.facebook.com/share/1BwZBjAaY6/"
+})
+
+ </script>   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

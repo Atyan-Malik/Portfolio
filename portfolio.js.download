@@ -1,0 +1,17 @@
+let project  = document.querySelector(".proj")
+let linkedin = document.querySelector(".link")
+let icon1    = document.querySelector(".icon1")
+let icon2    = document.querySelector(".icon2")
+
+project.addEventListener("click",()=>{
+window.location.href="https://github.com/Atyan-Malik"
+})
+linkedin.addEventListener("click",()=>{
+window.location.href="https://www.linkedin.com/in/atyan-shahid15"
+})
+icon2.addEventListener("click",()=>{
+window.location.href="https://www.instagram.com/atyan._.developer/"
+})
+icon1.addEventListener("click",()=>{
+window.location.href="https://www.facebook.com/share/1BwZBjAaY6/"
+})

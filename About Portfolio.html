@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/about.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Portfolio</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            border: 2px solid antiquewhite;
+            border-radius: 70%;
+            border: 10px solid orange;
+            position: relative;
+            bottom: 430px;
+            left: 280px;
+         
+           
+        }
+        body{
+           background-color: orange;
+        }
+        .skillsss{
+            margin-bottom: 300px;
+        }
+        li{
+            text-align: center;
+            
+        }
+        .para{
+            text-align: center;
+        }
+        h1, h2 ,h3{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+        }
+        a{
+    
+    color:black;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 120px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+        }
+     a:hover{
+    border-radius: 10px;
+    background-color: orange;
+    color:whitesmoke;
+}
+p{
+  text-align: center;
+}
+strong{
+  color: orangered;
+  
+}
+.mynav{
+display: flex;
+justify-content: end;
+gap: 30px;
+
+
+
+}
+.about-container{
+    background-color: rgba(255, 255, 255, 0.498); 
+     width: 800px;
+    height: 1000px;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+
+   
+    </style>
+</head>
+<body>
+
+  <div class="about-container">
+  <h1>ABOUT ME</h1>
+
+   <nav class="mynav">
+      <a href="http://127.0.0.1:5500/portfolio.html" target="_blank">Home</a>
+      <a href="http://127.0.0.1:5500/about.html" target="_blank">About</a>
+      <!-- <a href="http://127.0.0.1:5500/amazon%20copy.html">Projects</a> -->
+      <a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a>
+    </nav>
+    <p> Hello! My name is <strong>ATYAN MALIK</strong> m front end web developer i have learn <strong>html css and js </strong>till now ! <br> And i m working on improving my skills in future , also working on Backend development  <br>so that i can carry on my journey as a <strong> full stake developer ! 
+    </strong></p>
+  <div class="skillsss">
+    <h3>SKIILS</h3>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+    <li>MICROSFT WORD / EXCEL</li>
+  </div>
+ 
+  <div class="para">
+    <!-- <p>Hello this is atyan malik ! i m front end web developer i have learn html css and js till now !</p> -->
+    <h2>EDUCATION</h2>
+    <p>
+      </p><li>Matric from Allama iqbal school</li>
+      <li> FSc from Allama Iqbal college</li>
+      <li> Six months long Microsoft Excel and word diploma</li>
+      <li> Frontend web development course from Youtube!</li>
+    
+    
+    <p></p>
+  </div>
+  <div>
+    <img src="./About Portfolio_files/image.jpg" alt="">
+  </div>
+
+
+
+
+
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
